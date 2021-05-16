@@ -1,24 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
+ * @author Edynson, Jhonfer
  */
 public class ClsDecoratorZombie implements IZombie{
     private IZombie wrappeZombie;
 
     public ClsDecoratorZombie(IZombie obj){
-
+        wrappeZombie = obj;
+    }
+    
+    @Override
+    public boolean executeMove(){ 
+        wrappeZombie.move();
+        return true; 
     }
 
-    public boolean executeMove(){ return true; }
-    public boolean executeAttack(){ return true; }
-
+    @Override
+    public boolean executeAttack(){ 
+        wrappeZombie.attack();
+        return true; 
+    }
 
     @Override
     public void move() {

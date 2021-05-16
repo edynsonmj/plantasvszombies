@@ -2,8 +2,9 @@ package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
- */
+ * @author Edynson, Jhonfer 
+ * */
 public interface IZombie extends IFighter {
-    
+    public boolean executeMove();
+    public boolean executeAttack();
 }

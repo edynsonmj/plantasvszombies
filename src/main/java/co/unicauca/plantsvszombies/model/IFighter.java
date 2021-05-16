@@ -2,7 +2,7 @@ package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
+ * @author Edynson, Jhonfer
  */
 public interface IFighter {
 

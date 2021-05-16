@@ -2,11 +2,14 @@ package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
+ * @author Edynson, Jhonfer
  */
 public class ClsHongo implements IPlant{
 
+    @Override
     public boolean executeMove(){ return true; }
+
+    @Override
     public boolean executeAttack(){ return true; }
 
     @Override

@@ -2,8 +2,10 @@ package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
+ * @author Edynson, Jhonfer
  */
 public class ClsAbanderado extends ClsDecoratorZombie {
-    
+    public ClsAbanderado(IZombie obj) {
+        super(obj);
+    }    
 }

@@ -2,12 +2,15 @@ package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
+ * @author Edynson, Jhonfer
  */
 public class ClsZombieCommon implements IZombie{
     
 
+    @Override
     public boolean executeMove(){ return true; }
+
+    @Override
     public boolean executeAttack(){ return true; }
 
     @Override

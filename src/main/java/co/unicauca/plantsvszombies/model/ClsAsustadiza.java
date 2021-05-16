@@ -2,8 +2,11 @@ package co.unicauca.plantsvszombies.model;
 
 /**
  *
- * @author jhonf
+ * @author Edynson, Jhonfer
  */
 public class ClsAsustadiza extends ClsDecoratorPlant {
     
+    public ClsAsustadiza(IPlant obj) {
+        super(obj);
+    }
 }
